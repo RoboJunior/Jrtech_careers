@@ -14,6 +14,7 @@
     </style>
   </head>
   <body>
+    {% include "nav.html" %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>
       <img class="img-fluid" id='banner' src="https://i.postimg.cc/NFJwvFmG/banner.jpg">
@@ -32,9 +33,9 @@
         {% endfor %}
       </p>
       <div class="text-center">
-      <button class="btn btn-secondary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2024, JrTech</p>
+      <a href="mailto:jeyaramanjr7@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20name%20%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%20%3A%20%3Cyour%20question%20here%3E" class="btn btn-secondary btn-lg">Contact Us</a>
         <div>
     </div>
+        {% include "footer.html" %}
   </body>
 </html>
